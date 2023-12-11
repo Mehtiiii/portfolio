@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Document</title>
+    <script>
+        window.addEventListener('load', () => {
+            document.querySelector('.loader').classList.add('hide')
+            document.querySelector('.loader span').style.animationPlayState = 'paused'
+            document.body.style.overflow = 'auto'
+        })
+    </script>
+</head>
+
+<body>
+    <nav class="nav">
+        <i class="nav__menu-toggle fa-solid fa-bars"></i>
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link active" href="#home">خانه</a></li>
+            <li class="nav__item"><a class="nav__link" href="#portfolio">نمونه کارها</a></li>
+            <li class="nav__item"><a class="nav__link" href="#skills">مهارت‌ها</a></li>
+            <li class="nav__item"><a class="nav__link" href="#about-me">درباره من</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contact-me">ارتباط با من</a></li>
+        </ul>
+        <button class="nav__screen-mode"><i class="fa-sharp fa-solid fa-expand"></i></button>
+    </nav>
+
+    <div class="inner-container">
+        <div class="hero-header" id="home">
+            <div class="hero-header__content">
+                <h1 class="hero-header__heading">من <span>مهدی دیناروند</span> هستم</h1>
+                <h4 class="hero-header__subheading">
+                    <span>یک&nbsp;</span>
+                    <span class="hero-header__job" data-content="طراح سایت.,توسعه دهنده وب.,برنامه‌نویس وب."></span>
+                    <span class="hero-header__cursor">|</span>
+                </h4>
+                <p class="hero-header__desc">من یک علاقه‌مند به فناوری و دنیای دیجیتال هستم، به طوری که می‌توانم خود را
+                    یک گیک و عاشق فناوری توصیف کنم.</p>
+                <button class="hero-header__btn">دانلود رزومه</button>
+            </div>
+            <div class="hero-header__picture">
+                <img class="hero-header__img" src="img/personal-image.jpg" alt="مهدی دیناروند">
+                <span class="circle-1"></span>
+            </div>
+        </div>
+
+        <section class="portfolio">
+            <div id="portfolio"></div>
+            <p class="portfolio__desc">آخرین پروژه‌ها</p>
+            <h2 class="portfolio__heading">کارهای من</h2>
+            <div class="portfolio__list">
+                <a class="portfolio__item" href="#" target="_blank">
+                    <img class="portfolio__img" src="img/portfolio1.webp">
+                </a>
+                <a class="portfolio__item"
+                    href="#"
+                    target="_blank">
+                    <img class="portfolio__img" src="img/portfolio2.webp">
+                </a>
+                <a class="portfolio__item" href="#" target="_blank">
+                    <img class="portfolio__img" src="img/portfolio3.webp">
+                </a>
+                <a class="portfolio__item" href="#" target="_blank">
+                    <img class="portfolio__img" src="img/portfolio4.webp">
+                </a>
+                <a class="portfolio__item" href="#" target="_blank">
+                    <img class="portfolio__img" src="img/portfolio5.webp">
+                </a>
+                <a class="portfolio__item" href="#" target="_blank">
+                    <img class="portfolio__img" src="img/portfolio6.webp">
+                </a>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div id="skills"></div>
+            <p class="skills__desc">برخی از مهارت‌های من</p>
+            <h2 class="skills__heading">مهارت‌های من</h2>
+            <ul class="skills__list">
+                <li class="skills__item">
+                    <span class="skills__title">HTML</span>
+                    <span class="skills__percent">95%</span>
+                    <div class="skills__progress">
+                        <div class="skills__progress-bar" data-percent="95"></div>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <span class="skills__title">CSS</span>
+                    <span class="skills__percent">80%</span>
+                    <div class="skills__progress">
+                        <div class="skills__progress-bar" data-percent="80"></div>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <span class="skills__title">Bootstrap</span>
+                    <span class="skills__percent">75%</span>
+                    <div class="skills__progress">
+                        <div class="skills__progress-bar" data-percent="75"></div>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <span class="skills__title">JavaScript</span>
+                    <span class="skills__percent">70%</span>
+                    <div class="skills__progress">
+                        <div class="skills__progress-bar" data-percent="70"></div>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <span class="skills__title">PHP</span>
+                    <span class="skills__percent">65%</span>
+                    <div class="skills__progress">
+                        <div class="skills__progress-bar" data-percent="65"></div>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <span class="skills__title">MySQL</span>
+                    <span class="skills__percent">80%</span>
+                    <div class="skills__progress">
+                        <div class="skills__progress-bar" data-percent="80"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="about-me">
+            <div id="about-me"></div>
+            <img class="about-me__picture" src="img/max-duzij-qAjJk-un3BI-unsplash.jpg"></img>
+            <div class="about-me__content">
+                <h2 class="about-me__heading">درباره من</h2>
+                <ul class="about-me__bio-list">
+                    <li class="about-me__bio-item">نام و نام خانوادگی : <span>مهدی دیناروند</span></li>
+                    <li class="about-me__bio-item">مدرک تحصیلی : <span>کاردانی کامپیوتر</span></li>
+                    <li class="about-me__bio-item">تاریخ تولد : <span>22 / 2 / 1379</span></li>
+                    <li class="about-me__bio-item">موبایل : <span>09362672181</span></li>
+                    <li class="about-me__bio-item">محل زندگی : <span>ایران ، خوزستان ، شوش دانیال</span></li>
+                    <li class="about-me__bio-item">ایمیل : <span>d3ntyx@yahoo.com</span></li>
+                </ul>
+                <p class="about-me__desc">از بچگی علاقه زیادی به متخصص شدن در زمینه کامپیوتر داشتم. به محض اینکه با
+                    برنامه‌نویسی آشنا شدم، دنیای جدیدی به روم باز شد و این عشق و علاقه ام به کامپیوتر به یک
+                    سطح بالاتر رسید.</p>
+                <button>دانلود رزومه</button>
+            </div>
+        </section>
+
+        <section class="contact-me">
+            <div id="contact-me"></div>
+            <h2 class="contact-me__heading">ارتباط با من</h2>
+            <div class="contact-me__map" id="map">
+                <script>
+                    function initMap() {
+                        let uluru = { lat: -25.363, lng: 131.044 };
+
+                        let map = new google.maps.Map(document.querySelector('map'), {
+                            zoom: 4,
+                            center: uluru
+                        });
+                    }
+                </script>
+            </div>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRyrjcWci6YPApXubxIXexpp37OzzFOQI&callback=initMap"></script>
+            <form class="contact-me__form" action="/">
+                <input class="contact-me__input" type="text" placeholder="ایمیل">
+                <input class="contact-me__input" type="text" placeholder="موضوع">
+                <textarea class="contact-me__textarea" placeholder="متن پیام..."></textarea>
+                <button class="contact-me__submit">ارسال</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p class="footer__content">طراحی قالب توسط <span>مهدی دیناروند</span></p>
+    </footer>
+
+    <!-- ***************************************************************************** -->
+
+    <div class="loader">
+        <span></span>
+    </div>
+
+    <div class="color-pallet">
+        <div class="color-pallet__menu">
+            <h6 class="color-pallet__header">انتخاب تم رنگی</h6>
+            <ul class="color-pallet__themes">
+                <li class="color-pallet__theme" data-color="#1ab394"></li>
+                <li class="color-pallet__theme" data-color="#fbdd62"></li>
+                <li class="color-pallet__theme" data-color="#ddae3f"></li>
+                <li class="color-pallet__theme" data-color="#0cc0de"></li>
+                <li class="color-pallet__theme" data-color="#1b63ad"></li>
+                <li class="color-pallet__theme" data-color="#d78fd6"></li>
+                <li class="color-pallet__theme" data-color="#ff645e"></li>
+                <li class="color-pallet__theme" data-color="#ff4274"></li>
+                <li class="color-pallet__theme" data-color="#d31d4d"></li>
+            </ul>
+            <h6 class="color-pallet__header">مود پس‌زمینه</h6>
+            <ul class="color-pallet__modes">
+                <li class="color-pallet__mode color-pallet__mode--light"><i class="fa-solid fa-sun"></i> روشن</li>
+                <li class="color-pallet__mode color-pallet__mode--dark"><i class="fa-solid fa-moon"></i> تیره</li>
+            </ul>
+        </div>
+        <div class="color-pallet__icon">
+            <i class="fa-sharp fa-solid fa-gear"></i>
+        </div>
+    </div>
+
+    <div class="social">
+        <ul class="social__list">
+            <li class="social__item"><a href="#" class="social__link"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="social__item"><a href="#" class="social__link"><i class="fa-brands fa-github"></i></a></li>
+            <li class="social__item"><a href="#" class="social__link"><i class="fa-brands fa-telegram"></i></a></li>
+            <li class="social__item"><a href="#" class="social__link"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <p class="social__text"><span>دنبال کردن من</span></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
